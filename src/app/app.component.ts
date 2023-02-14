@@ -12,7 +12,7 @@ export class AppComponent {
   alpha = 'ABC';
   beta = 'yxz';
   final = '';
-  enterednumber = '0';
+  enterednumber = '';
   checkIsPEO = '';
   numberpalindrome = 'daa';
   checkIsPalindrome = '';
@@ -36,6 +36,7 @@ export class AppComponent {
   }
 
   isPrimeEvenOdd(number) {
+    this.checkIsPEO = '';
     var result = '';
     if (number <= 1) result = 'Not Prime';
     if (number == 2) result = 'Prime';
@@ -57,7 +58,7 @@ export class AppComponent {
   }
 
   clearValue() {
-    this.enterednumber = '0';
+    this.enterednumber = '';
     this.checkIsPEO = '';
   }
 

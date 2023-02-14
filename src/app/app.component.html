@@ -39,9 +39,10 @@
     <input
       placeholder="Enter a number"
       type="text"
-      [(ngModel)]="numberpalindrome" maxlength = "3"
-    />&nbsp; <button (click)="checkPalindrome()">Check</button>&nbsp;
-    <button (click)="clearPalindrome()">Clear</button>
+      [(ngModel)]="numberpalindrome"
+      maxlength="3"
+      (input)="checkPalindrome()"
+    />
   </div>
   <div style="margin-top: 10px">
     <i>Entered number is {{ checkIsPalindrome }} Palindrome</i>

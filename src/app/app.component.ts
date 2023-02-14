@@ -14,7 +14,7 @@ export class AppComponent {
   final = '';
   enterednumber = '0';
   checkIsPEO = '';
-  numberpalindrome = '11';
+  numberpalindrome = '0';
   checkIsPalindrome = '';
 
   ngOnInit() {
@@ -67,6 +67,10 @@ export class AppComponent {
 
   checkPalindrome() {
     alert(this.isPalidrome(this.numberpalindrome));
+  }
+
+  clearPalindrome() {
+    this.numberpalindrome = '0';
   }
 
   isPalidrome(input) {

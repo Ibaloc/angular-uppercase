@@ -19,7 +19,7 @@
     <input placeholder="" lowercase type="text" />
   </div>
   <div style="margin-top: 30px">
-    <b><i>Prime Number / Odd / Even</i></b>
+    <b><i>Prime Number / Odd / Even (Max 5 Length)</i></b>
   </div>
   <div style="margin-top:5px;">
     <input
@@ -27,7 +27,7 @@
       type="number"
       [(ngModel)]="enterednumber"
       (input)="checkValue()"
-      maxlength="5"
+      onKeyPress="if(this.value.length==5) return false;"
     />
   </div>
   <div style="margin-top: 10px">

@@ -6,7 +6,7 @@ import { Component, ElementRef, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Angular Exercise ' + VERSION.full;
+  name = 'Angular Exercise Trial (v' + VERSION.full + ')';
   author = '>> Moe Q. <<';
   result = '';
   alpha = 'ABC';

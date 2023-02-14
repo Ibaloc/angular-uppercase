@@ -65,15 +65,14 @@ export class AppComponent {
   }
 
   checkPalindrome() {
-    this.checkIsPalindrome = this.isPalidrome(this.numberpalindrome);
+    this.checkIsPalindrome = this.isPalindrome(this.numberpalindrome);
   }
 
   clearPalindrome() {
-    this.numberpalindrome = '0';
+    this.numberpalindrome = '';
   }
 
-  isPalidrome(input) {
-    alert(input.length);
+  isPalindrome(input) {
     if (input != '') {
       if (input.length == 1 || (input.length == 2 && input[0] == input[1])) {
         return '';
@@ -81,7 +80,7 @@ export class AppComponent {
         if (input[0] != input[input.length - 1]) {
           return 'Not';
         } else {
-          return this.isPalidrome(input.substring(0, input.length - 2));
+          return this.isPalindrome(input.substring(0, input.length - 2));
         }
       }
       return 'Not';

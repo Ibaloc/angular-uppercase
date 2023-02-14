@@ -73,15 +73,13 @@ export class AppComponent {
   }
 
   isPalidrome(input) {
-    alert(input.length);
-
     if (input.length == 1 || (input.length == 2 && input[0] == input[1])) {
       return 'Yes';
     } else if (input.length > 1) {
       if (input[0] != input[input.length - 1]) {
         return 'No';
       } else {
-        //return this.isPalindrome(input.substring(1, input.length - 2));
+        return this.isPalidrome(input.substring(0, input.length - 2));
         return 'A';
       }
     }

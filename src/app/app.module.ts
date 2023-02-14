@@ -4,10 +4,11 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { UppercaseDirective } from './uppercase.directive';
+import { LowercaseDirective } from './lowercase.directive';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, UppercaseDirective],
+  declarations: [AppComponent, UppercaseDirective, LowercaseDirective],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

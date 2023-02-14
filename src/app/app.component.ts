@@ -7,21 +7,22 @@ import { Component, ElementRef } from '@angular/core';
 })
 export class AppComponent {
   name = 'Angular Exercise';
-  result = '';
-}
 
-var alpha = 'ABC';
-var beta = 'yxz';
-var result = '';
+  JavaScript();
 
-for (let i = 0; i < alpha.length; i++) {
-  for (let j = 0; j < beta.length; j++) {
-    result = result + '"' + alpha[i] + beta[j] + '"' + ', ';
+  public JavaScript() {
+    var alpha = 'ABC';
+    var beta = 'yxz';
+    var result = '';
+
+    for (let i = 0; i < alpha.length; i++) {
+      for (let j = 0; j < beta.length; j++) {
+        result = result + '"' + alpha[i] + beta[j] + '"' + ', ';
+      }
+    }
+
+    //try {
+    return (result = result.substring(0, result.length - 2));
+    //} catch {}
   }
 }
-try {
-  document.getElementById('lblresult').innerHTML = result.substring(
-    0,
-    result.length - 2
-  );
-} catch {}

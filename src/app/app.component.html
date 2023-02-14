@@ -26,6 +26,8 @@
       placeholder="Enter a number"
       type="number"
       [(ngModel)]="enterednumber"
-    />
+    />&nbsp;
+    <button (click)="checkValue($event)">Check</button>
   </div>
+  <div style="margin-top: 10px">Result : {{ checkIsPEO }}</div>
 </div>

@@ -12,6 +12,8 @@ export class AppComponent {
   alpha = 'ABC';
   beta = 'yxz';
   final = '';
+  enterednumber = '2';
+  checkIsPEO = '';
 
   ngOnInit() {
     this.JavaSciptRandom();
@@ -28,5 +30,22 @@ export class AppComponent {
     }
 
     this.result = this.final.substring(0, this.final.length - 2);
+  }
+
+  isPrimeEvenOdd(number) {
+    var result = '';
+    if (number <= 1) result = 'Not Prime';
+    if (number == 2) result = 'Prime';
+    if (number % 2 == 0) {
+      result = result + '/Even';
+    } else {
+      result = result + '/Odd';
+    }
+
+    this.checkIsPEO = result;
+  }
+
+  checkValue(event) {
+    this.isPrimeEvenOdd(this.enterednumber);
   }
 }

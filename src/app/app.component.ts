@@ -14,9 +14,12 @@ export class AppComponent {
   final = '';
   enterednumber = '0';
   checkIsPEO = '';
+  numberpalindrome = '11';
+  checkIsPalindrome = '';
 
   ngOnInit() {
     this.JavaSciptRandom();
+    this.isPalidrome(101);
   }
 
   JavaSciptRandom() {
@@ -60,5 +63,22 @@ export class AppComponent {
 
   checkValue(event) {
     this.isPrimeEvenOdd(this.enterednumber);
+  }
+
+  checkPalindrome() {
+    alert(this.isPalidrome(this.numberpalindrome));
+  }
+
+  isPalidrome(input) {
+    if (input.length == 1 || (input.length == 2 && input[0] == input[1])) {
+      return 'Yes';
+    } else if (input.length > 1) {
+      if (input[0] != input[input.length - 1]) {
+        return 'No';
+      } else {
+        //return this.isPalindrome(input.substring(1, input.length - 2));
+      }
+      return 'No';
+    }
   }
 }

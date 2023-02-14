@@ -14,6 +14,10 @@ export class AppComponent {
   final = '';
 
   ngOnInit() {
+    this.JavaSciptRandom();
+  }
+
+  JavaSciptRandom() {
     var alpha = this.alpha;
     var beta = this.beta;
 

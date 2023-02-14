@@ -61,16 +61,12 @@ export class AppComponent {
     this.checkIsPEO = '';
   }
 
-  checkValue(event) {
+  checkValue() {
     this.isPrimeEvenOdd(this.enterednumber);
   }
 
   checkPalindrome() {
     this.checkIsPalindrome = this.isPalindrome(this.numberpalindrome);
-  }
-
-  clearPalindrome() {
-    this.numberpalindrome = '';
   }
 
   isPalindrome(input) {

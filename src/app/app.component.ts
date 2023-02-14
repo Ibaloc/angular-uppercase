@@ -11,6 +11,7 @@ export class AppComponent {
   result = '';
   alpha = 'ABC';
   beta = 'yxz';
+  final = '';
 
   ngOnInit() {
     var alpha = this.alpha;
@@ -18,8 +19,10 @@ export class AppComponent {
 
     for (let i = 0; i < alpha.length; i++) {
       for (let j = 0; j < beta.length; j++) {
-        this.result = this.result + '"' + alpha[i] + beta[j] + '"' + ', ';
+        this.final = this.final + '"' + alpha[i] + beta[j] + '"' + ', ';
       }
     }
+
+    this.result = this.final.substring(0, this.final.length - 2);
   }
 }

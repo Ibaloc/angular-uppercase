@@ -48,6 +48,9 @@ export class AppComponent {
         result = 'Prime';
       }
     }
+    if (result == '') {
+      result = 'Prime';
+    }
     if (number % 2 == 0) {
       result = result + '/Even';
     } else {

@@ -1,0 +1,17 @@
+b {
+  font-family: monospace;
+  color: rgb(26, 123, 207);
+}
+form {
+  background-color: greenyellow;
+}
+input {
+  border-end-end-radius: 10cm;
+  border-bottom-right-radius: 0.1cm;
+
+  height: 0.4cm;
+  column-rule-width: 2mm;
+}
+p {
+  color: black;
+}

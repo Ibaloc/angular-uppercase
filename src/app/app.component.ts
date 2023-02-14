@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Angular';
+  name = 'Angular Exercise';
+  result = '';
+}
+
+var alpha = 'ABC';
+var beta = 'yxz';
+var result = '';
+
+for (let i = 0; i < alpha.length; i++) {
+  for (let j = 0; j < beta.length; j++) {
+    result = result + '"' + alpha[i] + beta[j] + '"' + ', ';
+  }
 }

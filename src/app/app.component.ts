@@ -12,14 +12,15 @@ export class AppComponent {
   alpha = 'ABC';
   beta = 'yxz';
   final = '';
-  enterednumber = '';
+  enterednumber = '3';
   checkIsPEO = '';
   numberpalindrome = 'daa';
   checkIsPalindrome = '';
-
+  3;
   ngOnInit() {
     this.JavaSciptRandom();
     this.checkIsPalindrome = this.isPalindrome(this.numberpalindrome);
+    this.isPrimeEvenOdd(this.enterednumber);
   }
 
   JavaSciptRandom() {

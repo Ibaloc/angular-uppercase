@@ -14,11 +14,12 @@ export class AppComponent {
   final = '';
   enterednumber = '0';
   checkIsPEO = '';
-  numberpalindrome = '101';
+  numberpalindrome = 'daa';
   checkIsPalindrome = '';
 
   ngOnInit() {
     this.JavaSciptRandom();
+    this.checkIsPalindrome = this.isPalindrome(this.numberpalindrome);
   }
 
   JavaSciptRandom() {

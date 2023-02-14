@@ -18,5 +18,3 @@ for (let i = 0; i < alpha.length; i++) {
     result = result + '"' + alpha[i] + beta[j] + '"' + ', ';
   }
 }
-
-result = result.substring(0, result.length - 2);

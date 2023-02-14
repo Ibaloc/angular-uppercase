@@ -76,9 +76,10 @@ export class AppComponent {
       if (input[0] != input[input.length - 1]) {
         return 'No';
       } else {
-        //return this.isPalindrome(input.substring(1, input.length - 2));
+        //return isPalindrome(input.substring(1, input.length - 2));
+        return 'A';
       }
-      return 'No';
     }
+    return 'No';
   }
 }

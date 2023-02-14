@@ -1,4 +1,4 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, VERSION } from '@angular/core';
 
 @Component({
   selector: 'my-app',
@@ -6,7 +6,7 @@ import { Component, ElementRef } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Angular Exercise';
+  name = 'Angular Exercise ' + VERSION.full;
   author = '>> Moe Q. <<';
   result = '';
   alpha = 'ABC';

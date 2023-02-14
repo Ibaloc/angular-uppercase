@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'my-app',
@@ -19,3 +19,9 @@ for (let i = 0; i < alpha.length; i++) {
     result = result + '"' + alpha[i] + beta[j] + '"' + ', ';
   }
 }
+try {
+  document.getElementById('lblresult').innerHTML = result.substring(
+    0,
+    result.length - 2
+  );
+} catch {}

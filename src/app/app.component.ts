@@ -8,7 +8,6 @@ import { Component, ElementRef } from '@angular/core';
 export class AppComponent {
   name = 'Angular Exercise';
   result = '';
-
   alpha = 'ABC';
   beta = 'yxz';
 

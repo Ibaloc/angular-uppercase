@@ -37,28 +37,32 @@ export class AppComponent {
   }
 
   isPrimeEvenOdd(number) {
-    this.checkIsPEO = '';
-    var result = '';
-    if (number <= 1) result = 'Not Prime';
-    if (number == 2) result = 'Prime';
-    var limit = Math.floor(Math.sqrt(number));
-    for (let i = 2; i <= limit; ++i) {
-      if (number % i == 0) {
-        result = 'Not Prime';
-      } else {
+    if (number == null) {
+      this.checkIsPEO = 'Enter a number';
+    } else {
+      this.checkIsPEO = '';
+      var result = '';
+      if (number <= 1) result = 'Not Prime';
+      if (number == 2) result = 'Prime';
+      var limit = Math.floor(Math.sqrt(number));
+      for (let i = 2; i <= limit; ++i) {
+        if (number % i == 0) {
+          result = 'Not Prime';
+        } else {
+          result = 'Prime';
+        }
+      }
+      if (result == '') {
         result = 'Prime';
       }
-    }
-    if (result == '') {
-      result = 'Prime';
-    }
-    if (number % 2 == 0) {
-      result = result + '/Even';
-    } else {
-      result = result + '/Odd';
-    }
+      if (number % 2 == 0) {
+        result = result + '/Even';
+      } else {
+        result = result + '/Odd';
+      }
 
-    this.checkIsPEO = result;
+      this.checkIsPEO = result;
+    }
   }
 
   clearValue() {

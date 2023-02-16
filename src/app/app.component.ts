@@ -143,4 +143,8 @@ export class AppComponent {
       return 'Not';
     }
   }
+
+  buttonPressed() {
+    alert('You pressed the button!');
+  }
 }

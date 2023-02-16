@@ -30,6 +30,12 @@ export class AppComponent {
     this.isPrimeEvenOdd(3, 'M');
     this.isPrimeEvenOdd(5, 'M');
     this.isPrimeEvenOdd(8, 'M');
+    this.isPrimeEvenOdd(9, 'M');
+    this.isPrimeEvenOdd(13, 'M');
+    this.isPrimeEvenOdd(25, 'M');
+    this.isPrimeEvenOdd(38, 'M');
+    this.isPrimeEvenOdd(42, 'M');
+    this.isPrimeEvenOdd(47, 'M');
   }
 
   JavaSciptRandom() {

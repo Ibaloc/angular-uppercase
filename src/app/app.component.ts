@@ -145,6 +145,6 @@ export class AppComponent {
   }
 
   buttonPressed() {
-    alert('You pressed the button!');
+    alert('You pressed the button! Happy Coding...');
   }
 }

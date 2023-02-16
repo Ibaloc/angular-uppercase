@@ -19,10 +19,13 @@ export class AppComponent {
   checkIsPalindrome = '';
   3;
   ngOnInit() {
+    //JAVASCRIPT GENERATION
     this.JavaSciptRandom();
+    //PALINDROME CHECKING MAX OF 3 CHARACTERS
     this.checkIsPalindrome = this.isPalindrome(this.numberpalindrome);
+    //SINGLE CHECKING BASED ON INPUT
     this.isPrimeEvenOdd(this.enterednumber, 'S');
-
+    //MULTIPLE CHECKING OF PRIME, EVEN AND ODD
     this.isPrimeEvenOdd(0, 'M');
     this.isPrimeEvenOdd(1, 'M');
     this.isPrimeEvenOdd(1, 'M');

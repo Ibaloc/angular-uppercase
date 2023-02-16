@@ -93,7 +93,8 @@ export class AppComponent {
           result = result + '/Odd';
         }
 
-        this.checkIsPEO_M = this.checkIsPEO_M + number + ' - ' + result + ' ';
+        this.checkIsPEO_M =
+          this.checkIsPEO_M + number + ' - ' + result + '<br>';
       }
     }
   }

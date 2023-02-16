@@ -6,6 +6,7 @@ import { Component, ElementRef, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  //DECLARATION OF VARIABLES
   name = 'Angular Exercise Trial (v' + VERSION.full + ')';
   author = '>> Moe Q. <<';
   result = '';
@@ -18,6 +19,8 @@ export class AppComponent {
   numberpalindrome = 'daa';
   checkIsPalindrome = '';
   3;
+
+  //INITIAL RUN OF THE PAGE
   ngOnInit() {
     //JAVASCRIPT GENERATION
     this.JavaSciptRandom();

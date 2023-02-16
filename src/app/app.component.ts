@@ -93,8 +93,13 @@ export class AppComponent {
           result = result + '/Odd';
         }
 
-        this.checkIsPEO_M =
-          this.checkIsPEO_M + number + ' - ' + result + '<br>';
+        if (result.includes('Not Prime')) {
+          this.checkIsPEO_M =
+            this.checkIsPEO_M + number + ' - ' + result + ' *<br>';
+        } else {
+          this.checkIsPEO_M =
+            this.checkIsPEO_M + number + ' - ' + result + '<br>';
+        }
       }
     }
   }

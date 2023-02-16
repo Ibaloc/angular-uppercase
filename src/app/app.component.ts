@@ -107,10 +107,10 @@ export class AppComponent {
 
         if (result.includes('Not Prime')) {
           this.checkIsPEO_M =
-            this.checkIsPEO_M + number + ' - ' + result + ' *<br>';
+            this.checkIsPEO_M + number + ' : ' + result + ' *<br>';
         } else {
           this.checkIsPEO_M =
-            this.checkIsPEO_M + number + ' - ' + result + '<br>';
+            this.checkIsPEO_M + number + ' : ' + result + '<br>';
         }
       }
     }
